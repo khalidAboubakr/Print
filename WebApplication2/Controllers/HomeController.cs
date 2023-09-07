@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebApplication2.Models;
 
 namespace WebApplication2.Controllers
 {
@@ -10,7 +11,14 @@ namespace WebApplication2.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var model = new formsubmito();
+            return View(model);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Index(formsubmito model)
+        {
+            return null;
         }
 
         public ActionResult About()

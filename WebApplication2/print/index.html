@@ -1,0 +1,291 @@
+
+
+
+<!DOCTYPE html>
+
+<html lang="en" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <head>
+  <script>
+  localStorage.clear();
+  </script>
+   
+    <title>اشعار مراجعة  </title>
+    <!-- Bootstrap -->
+    <link href="./js/bootstrap-4.2.1-rtl.css" rel="stylesheet">
+        <script>
+            // show the given page, hide the rest
+            function show(elementID) {
+                // try to find the requested page and alert if it's not found
+                var ele = document.getElementById(elementID);
+                if (!ele) {
+                    alert("no such element");
+                    return;
+                }
+
+                // get all pages, loop through them and hide them
+                var pages = document.getElementsByClassName('page');
+                for(var i = 0; i < pages.length; i++) {
+                    pages[i].style.display = 'none';
+                }
+
+                // then show the requested page
+                ele.style.display = 'block';
+            }
+        </script>
+    <style>
+         * {
+             box-sizing: border-box;
+         }
+         .row:after {
+             content: "";
+             clear: both;
+             display: block;
+         }
+         [class*="col-"] {
+             float: left;
+             padding: 10px;
+         }
+         .col-1 {width: 8.33%;}
+         .col-2 {width: 16.66%;}
+         .col-3 {width: 33%;}
+         .col-4 {width: 30%;}
+         .col-5 {width: 43.66%;}
+         .col-6 {width: 50%;}
+         .col-7 {width: 58.33%;}
+         .col-8 {width: 66.66%;}
+         .col-9 {width: 75%;}
+         .col-10 {width: 83.33%;}
+         .col-11 {width: 91.66%;}
+         .col-12 {width: 100%;}
+         html {
+             font-family: "Lucida Sans", sans-serif;
+         }
+         .header {
+             background-color: #ffffff;
+             color: #ffffff;
+             padding: 15px;
+         }
+         .menu ul {
+             list-style-type: none;
+             margin: 0;
+             padding: 0;
+         }
+         .menu li {
+             padding: 12px;
+             margin-bottom: 12px;
+             background-image: linear-gradient(to left, #1ca8e0 , #1ea64a);
+             color: white ;
+             box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+         }
+         .menu li:hover {
+           background-image: linear-gradient(to left, #1ca8e0 , #1ea64a);
+           color: white ;
+         }
+ a:hover {
+
+   color: #000000 !important;
+   background:none !important;
+
+}
+.dropdown-menu>a:hover {
+
+   color:white !important;
+   background:none !important;
+   background-image: linear-gradient(to left, #1ca8e0 , #1ea64a)!important;
+
+}
+span {
+                text-decoration:underline;
+                color:#008754;
+                cursor:pointer;
+            }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+thead {
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  text-align:center;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+	</style>
+
+<title> </title>
+
+<!-- this code from stackoverflow http://stackoverflow.com/questions/2255291/print-the-contents-of-a-div -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+</script>
+
+<script type="text/javascript">
+    function CopyElem(elem)
+    {
+       $('form input[type=text]').each(function() {
+         $(this).attr('value', $(this).val());
+       });
+
+       $('form input[type=checkbox]').each(function() {
+         $(this).attr('checked', $(this).prop("checked"));
+       });
+    }
+ function PrintElem(elem)
+    {
+        Popup($(elem).html());
+    }
+
+    function Popup(data)
+    {
+        var mywindow = window.open('', 'my div', 'height=400,width=600');
+        mywindow.document.write('<html><head><title>my div</title>');
+        /*optional stylesheet*/ //mywindow.document.write('<link rel="stylesheet" href="main.css" type="text/css" />');
+        mywindow.document.write('</head>  <body >');
+
+
+        mywindow.document.write(data);
+        mywindow.document.write('</body></html>');
+
+        mywindow.document.close(); // necessary for IE >= 10
+        mywindow.focus(); // necessary for IE >= 10
+
+        mywindow.print();
+        mywindow.close();
+
+        return true;
+    }
+</script>
+
+  </head>
+  <body>
+  <header>
+  <div>
+  <a href="https://saudigermanhealth.com/ar" " الرئيسية" ><img style="margin:-125px  30px 0 0;float:right;height:110px;" alt="الرئيسية" src="./images/logo-health-1_0.svg"></a>
+   </div>
+
+	</header>
+	<div>
+    <nav class="navbar navbar-expand-lg navbar-dark " style="margin:130px 0 0 0; background-color:#1ca8e0; background-image: linear-gradient(to left, #1ca8e0 , #1ea64a);">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" style="margin-right:60px;">
+          <li class="nav-item dropdown">
+            <a class=" aria-expanded="false" style="font-size: 20px; color: white;">إشعار مراجعة </a>
+            </div>
+
+    </nav>
+	</div>
+
+  <body>
+
+
+  <div id="container" style="border: 2px solid; width: 600px; padding: 5px;">
+
+    <form>
+
+
+
+
+      الاسم:<br/>
+      <input type="text" size="60"></input>
+      <br/><br/>
+
+      رقم الملف:
+      <input type="text" size="12"></input>
+      العمر:
+      <input type="text" size="2"></input>
+     الجنسية:
+      <input type="text"  size="5"></input>
+      <br/><br/>
+      التاريخ :
+       <input type="text"  size="10"></input>
+       <br/><br/>
+       العيادة:
+        <input type="text"  size="10"></input>
+        <br/><br/>
+      <input type="reset" value="Reset"></input>
+
+      <br/><br/>
+
+    </form>
+
+  </div> <!-- end #container -->
+
+    <input type="button" value="Print" onclick="CopyElem();PrintElem('#container')" />
+
+    <div id="copyoutput" style="display: none;"></div>
+
+
+
+
+
+
+
+
+
+
+    <div>
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark " style="margin:10px 0 0 0; background-color:#1ca8e0; background-image: linear-gradient(to left, #1ca8e0 , #1ea64a);">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto" style="margin-right:70%;">
+            <li class="nav-item dropdown" ></li>
+
+            <a  class= href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size:15px; color: rgb(255, 255, 255);">By ;Abdulmohsen Alhulaymah   </a>
+    </div>
+
+
+    <script src="js/jquery-2.1.4.js"></script>
+<script src="js/main.js"></script>
+
+	<script>
+
+
+
+
+           type="text/javascript">
+			$(document).ready(function() {
+				$("select").on('change', function() {
+					$(this).find("option:selected").each(function() {
+						var geeks = $(this).attr("value");
+						if (geeks) {
+							$(".GFG").not("." + geeks).hide();
+							$("." + geeks).show();
+							$(".GFF").not("." + geeks).hide();
+							$("." + geeks).show();
+						} else {
+							$(".GFG").hide();
+							$(".GFG").hide();
+						}
+
+					});
+				}).change();
+			});
+
+
+
+
+
+
+
+
+
+
+</script>
+
+  </body>
+  </html>

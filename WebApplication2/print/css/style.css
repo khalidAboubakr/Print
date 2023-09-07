@@ -1,0 +1,111 @@
+/* Banner */
+
+#banner {
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    background-color: #111111;
+    color: rgba(255, 255, 255, 0.5);
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    background-image: url("../../images/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 0;
+    display: -ms-flexbox;
+    height: 45rem !important;
+    min-height: 35rem;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+    #banner input, #banner select, #banner textarea {
+        color: #ffffff;
+    }
+
+    #banner a {
+        color: #018755;
+    }
+
+    #banner strong, #banner b {
+        color: #ffffff;
+    }
+
+    #banner h1, #banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
+        color: #ffffff;
+    }
+
+    #banner > .inner {
+        -moz-transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        transform: scale(1.0);
+        -moz-transition: opacity 1s ease, -moz-transform 1s ease;
+        -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+        -ms-transition: opacity 1s ease, -ms-transform 1s ease;
+        transition: opacity 1s ease, transform 1s ease;
+        opacity: 1;
+        position: relative;
+        z-index: 3;
+    }
+
+        #banner > .inner > :last-child {
+            margin-bottom: 0;
+        }
+
+    #banner video {
+        -moz-transform: translateX(50%) translateY(50%);
+        -webkit-transform: translateX(50%) translateY(50%);
+        -ms-transform: translateX(50%) translateY(50%);
+        transform: translateX(50%) translateY(50%);
+        bottom: 50%;
+        height: auto;
+        min-height: 70%;
+        min-width: 70%;
+        overflow: hidden;
+        position: absolute;
+        right: 50%;
+        width: auto;
+    }
+
+    #banner:after {
+        background: linear-gradient(to left, #6e6e6e, #292261 74%) !important;
+        content: ' ';
+        display: block;
+        height: 100%;
+        left: 0;
+        opacity: 0.3;
+        position: absolute;
+        top: 0;
+        webkit-linear-gradientidth: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+
+    #banner.small {
+        height: 30vh !important;
+        min-height: 30vh;
+    }
+
+.center {
+    text-align: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}

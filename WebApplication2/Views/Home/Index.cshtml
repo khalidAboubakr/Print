@@ -1,39 +1,86 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@model WebApplication2.Models.formsubmito
+@{
+    ViewBag.Title = "اشعار مراجعة";
 }
 
 <main>
-    <section class="row" aria-labelledby="aspnetTitle">
-        <h1 id="title">ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-    </section>
+    <header>
+        <div>
+            <a href="https://saudigermanhealth.com/ar"><img style="margin:-172px  30px 0 0;float:right;height:110px;" alt="الرئيسية" src="~/images/logo-health-1_0.svg"></a>
+        </div>
 
-    <form>
-
+    </header>
 
 
+    <div id="container">
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken();
+            @Html.ValidationSummary(true);
 
-        الاسم:<br />
-        <input type="text" size="60"></input>
-        <br /><br />
+        <div class="container">
+            <div class="row">
 
-        رقم الملف:
-        <input type="text" size="12"></input>
-        العمر:
-        <input type="text" size="2"></input>
-        الجنسية:
-        <input type="text" size="5"></input>
-        <br /><br />
-        التاريخ :
-        <input type="text" size="10"></input>
-        <br /><br />
-        العيادة:
-        <input type="text" size="10"></input>
-        <br /><br />
-        <input type="reset" value="Reset"></input>
 
-        <br /><br />
+                <div class="col-6">
+                    @Html.LabelFor(m => m.Name)
+                    @Html.TextBoxFor(m => m.Name, new { Class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Name)
+                </div>
 
-    </form>
+                <div class="col-6">
+                 
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    @Html.LabelFor(m => m.FileNumber)
+                    @Html.TextBoxFor(m => m.FileNumber, new { Class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.FileNumber)
+                </div>
+                <div class="col-4">
+                    @Html.LabelFor(m => m.Age)
+                    @Html.TextBoxFor(m => m.Age, new { Class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Age)
+
+                </div>
+                <div class="col-4">
+                    @Html.LabelFor(m => m.Nationality)
+                    @Html.DropDownListFor(n => n.Nationality,
+                         new SelectList(Model.Colors, "name", "name"), new { Class = "form-control" })
+
+                    @Html.ValidationMessageFor(m => m.Nationality)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    @Html.LabelFor(m => m.Date)
+                    @Html.TextBoxFor(m => m.Date, new { Class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Date)
+                </div>
+                <div class="col-4">
+                    @Html.LabelFor(m => m.Clinic)
+                    @Html.TextBoxFor(m => m.Clinic, new { Class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Clinic)
+                </div>
+                <div class="col-4">
+                
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <input class="btn btn-primary" type="submit" value="طباعة" />
+                </div>
+            </div>
+        </div>
+
+                }
+
+            </div> <!-- end #container -->
+
+
+            <div id="copyoutput" style="display: none;"></div>
+
 </main>
