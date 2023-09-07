@@ -14,9 +14,9 @@ namespace WebApplication2.Models
         [Display(Name = "الاٍسم")]
         public string Name { get; set; }
         [Display(Name = "رقم الملف")]
-        public int? FileNumber { get; set; }
+        public string FileNumber { get; set; }
         [Display(Name = "العمر")]
-        public int? Age { get; set; }
+        public string Age { get; set; }
         [Display(Name = "الجنسية")]
         public string Nationality { get; set; }
         [Display(Name = "التاريخ")]
